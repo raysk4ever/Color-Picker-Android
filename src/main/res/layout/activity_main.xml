@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:id="@+id/mRedP"
+                    style="@style/colorBtnStyle"
+                    android:backgroundTint="@color/red"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/mRed"
+                    style="@style/ColorViewStyle"
+                    android:background="@drawable/red_back"
+                    />
+
+                <Button
+                    android:id="@+id/mRedM"
+                    style="@style/colorBtnStyle"
+                    android:backgroundTint="@color/red"
+                    android:text="-" />
+            </LinearLayout>
+            <TextView
+                style="@style/ColorTextTile"
+                android:text="RED"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:id="@+id/mGreenP"
+                    style="@style/colorBtnStyle"
+                    android:backgroundTint="@color/green"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/mGreen"
+                    style="@style/ColorViewStyle"
+                    android:background="@drawable/green_back" />
+
+                <Button
+                    android:id="@+id/mGreenM"
+                    style="@style/colorBtnStyle"
+                    android:backgroundTint="@color/green"
+                    android:text="-" />
+            </LinearLayout>
+            <TextView
+                style="@style/ColorTextTile"
+                android:text="GREEN"
+                android:textColor="@color/green"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:id="@+id/mBlueP"
+                    style="@style/colorBtnStyle"
+                    android:backgroundTint="@color/blue"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/mBlue"
+                    style="@style/ColorViewStyle"
+                    android:background="@drawable/blue_back" />
+
+                <Button
+                    android:id="@+id/mBlueM"
+                    style="@style/colorBtnStyle"
+                    android:backgroundTint="@color/blue"
+                    android:text="-" />
+            </LinearLayout>
+            <TextView
+                style="@style/ColorTextTile"
+                android:text="BLUE"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mResultTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:text="rgb()"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
